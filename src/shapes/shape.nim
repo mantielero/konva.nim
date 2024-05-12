@@ -1,8 +1,10 @@
 import jsffi
+import std/dom
 
 type
   ShapeObj* {.importc:"Konva.Shape".} = ref object of JsObject
     zIndex*:proc(val:cint) {.closure.}
+    on*: proc(evtStr:cstring; handler: proc(evt:Event)) {.closure.}# for events
 
   ContextObj* {.importc:"Konva.Context".} = ref object of JsObject
     beginPath*: proc() {.closure.}

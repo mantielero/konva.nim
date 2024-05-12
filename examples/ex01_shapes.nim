@@ -1,5 +1,5 @@
 import konva
-
+import std/dom, jsconsole
 # Custom shape
 type
   TriangleObj* = ref object of ShapeObj  
@@ -92,10 +92,18 @@ width: 300, padding: 20, align: "center"} )
                                         fontSize: 18,
                                         padding: 5,
                                         fill: "white"})
+
+
+  # events
+  circle.on("mouseover", proc(evt:Event) =
+        console.log("Mouseover circle")
+  )
+      
   tooltip.add(tag)
   tooltip.add(tooltipText)
   layer.add(tooltip)
   layer.add(triangle)
+  layer.add(circle)  
   stage.add(layer)
   layer.draw()
 

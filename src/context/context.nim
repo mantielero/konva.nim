@@ -1,44 +1,24 @@
 import jsffi
 import ../shapes/shape
-
-type
-  TriangleObj* = ref object of ShapeObj  
-  ContextObj* {.importc:"Konva.Context".} = ref object of JsObject
-    beginPath*: proc() {.closure.}
-    moveTo*: proc(x,y:cint) {.closure.}
-    lineTo*: proc(x,y:cint) {.closure.}
-    quadraticCurveTo*: proc(a,b,c,d:cint) {.closure.}
-    closePath*: proc() {.closure.}
-    # special Konva.js method
-    fillStrokeShape*: proc(this:JsObject) {.closure.} 
-
-
-proc createTriangle(context: JsObject; shape:ShapeObj) =
-    context.beginPath()
-    context.moveTo(20, 50)
-    context.lineTo(220, 80)
-    context.quadraticCurveTo(150, 100, 260, 170)
-    context.closePath()
-
-    # special Konva.js method
-    context.fillStrokeShape(shape)
-
-proc newTriangle*():ShapeObj =
-  return newShape(createTriangle, "#00D2FF", "black", 4)
+# https://konvajs.org/api/Konva.Shape.html#sceneFunc__anchor
 #[
-var triangle = new Konva.Shape({
-      sceneFunc: function(context) {
-        context.beginPath();
-        context.moveTo(20, 50);
-        context.lineTo(220, 80);
-        context.quadraticCurveTo(150, 100, 260, 170);
-        context.closePath();
+get/set scene draw function. That function is used to draw the shape on a canvas.
+Also that function will be used to draw hit area of the shape, in case if hitFunc is not defined.
+#[
+// get scene draw function
+var sceneFunc = shape.sceneFunc();
 
-        // special Konva.js method
-        context.fillStrokeShape(this);
-      },
-      fill: '#00D2FF',
-      stroke: 'black',
-      strokeWidth: 4
+// set scene draw function
+shape.sceneFunc(function(context, shape) {
+  context.beginPath();
+  context.rect(0, 0, shape.width(), shape.height());
+  context.closePath();
+  // important Konva method that fill and stroke shape from its properties
+  // like stroke and fill
+  context.fillStrokeShape(shape);
 });
 ]#
+
+]#
+
+

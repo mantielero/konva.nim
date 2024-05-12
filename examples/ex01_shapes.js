@@ -2,69 +2,30 @@
 var framePtr = null;
 var excHandler = 0;
 var lastJSError = null;
-var NTI989855753 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI184549391 = {size: 0,kind: 36,base: null,node: null,finalizer: null};
 var NTI184549387 = {size: 0,kind: 34,base: null,node: null,finalizer: null};
-var NTI1023410182 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI33554450 = {size: 0,kind: 29,base: null,node: null,finalizer: null};
+var NTI1040187398 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI33555173 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI33555183 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI687865937 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI33554445 = {size: 0,kind: 36,base: null,node: null,finalizer: null};
-var NTI1006632969 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI134217749 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI134217741 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI134217743 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI33554435 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
-var NTI33555835 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI33555173 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI33555181 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
-var NTI33554449 = {size: 0,kind: 28,base: null,node: null,finalizer: null};
-var NTI33554450 = {size: 0,kind: 29,base: null,node: null,finalizer: null};
-var NTI33555180 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
-var NTI33555177 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI33555178 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI134217751 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NNI134217751 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI134217751.node = NNI134217751;
-var NNI33555178 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI33555178.node = NNI33555178;
-NTI33555180.base = NTI33555177;
-NTI33555181.base = NTI33555177;
-var NNI33555177 = {kind: 2, len: 5, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "parent", len: 0, typ: NTI33555180, name: "parent", sons: null}, 
-{kind: 1, offset: "name", len: 0, typ: NTI33554450, name: "name", sons: null}, 
-{kind: 1, offset: "message", len: 0, typ: NTI33554449, name: "msg", sons: null}, 
-{kind: 1, offset: "trace", len: 0, typ: NTI33554449, name: "trace", sons: null}, 
-{kind: 1, offset: "up", len: 0, typ: NTI33555181, name: "up", sons: null}]};
-NTI33555177.node = NNI33555177;
-var NNI33555173 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI33555173.node = NNI33555173;
-NTI33555177.base = NTI33555173;
-NTI33555178.base = NTI33555177;
-NTI134217751.base = NTI33555178;
-var NNI33555835 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI33554450, name: "Field0", sons: null}, 
-{kind: 1, offset: "Field1", len: 0, typ: NTI33554435, name: "Field1", sons: null}, 
-{kind: 1, offset: "Field2", len: 0, typ: NTI33554450, name: "Field2", sons: null}]};
-NTI33555835.node = NNI33555835;
-var NNI134217743 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI134217743.node = NNI134217743;
-var NNI134217741 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI134217741.node = NNI134217741;
-NTI134217741.base = NTI33555178;
-NTI134217743.base = NTI134217741;
-var NNI134217749 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI134217749.node = NNI134217749;
-NTI134217749.base = NTI33555178;
-var NNI1006632969 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "x", len: 0, typ: NTI33554435, name: "x", sons: null}, 
+var NTI1023410185 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NNI1023410185 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "x", len: 0, typ: NTI33554435, name: "x", sons: null}, 
 {kind: 1, offset: "y", len: 0, typ: NTI33554435, name: "y", sons: null}, 
 {kind: 1, offset: "opacity", len: 0, typ: NTI33554445, name: "opacity", sons: null}]};
-NTI1006632969.node = NNI1006632969;
+NTI1023410185.node = NNI1023410185;
 var NNI687865937 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI687865937.node = NNI687865937;
 var NNI33555183 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI33555183.node = NNI33555183;
+var NNI33555173 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI33555173.node = NNI33555173;
 NTI33555183.base = NTI33555173;
 NTI687865937.base = NTI33555183;
-NTI1006632969.base = NTI687865937;
-var NNI1023410182 = {kind: 2, len: 10, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "fill", len: 0, typ: NTI33554450, name: "fill", sons: null}, 
+NTI1023410185.base = NTI687865937;
+var NNI1040187398 = {kind: 2, len: 10, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "fill", len: 0, typ: NTI33554450, name: "fill", sons: null}, 
 {kind: 1, offset: "pointerDirection", len: 0, typ: NTI33554450, name: "pointerDirection", sons: null}, 
 {kind: 1, offset: "pointerWidth", len: 0, typ: NTI184549387, name: "pointerWidth", sons: null}, 
 {kind: 1, offset: "pointerHeight", len: 0, typ: NTI184549387, name: "pointerHeight", sons: null}, 
@@ -74,17 +35,8 @@ var NNI1023410182 = {kind: 2, len: 10, offset: 0, typ: null, name: null, sons: [
 {kind: 1, offset: "shadowOffsetX", len: 0, typ: NTI184549387, name: "shadowOffsetX", sons: null}, 
 {kind: 1, offset: "shadowOffsetY", len: 0, typ: NTI184549387, name: "shadowOffsetY", sons: null}, 
 {kind: 1, offset: "shadowOpacity", len: 0, typ: NTI184549391, name: "shadowOpacity", sons: null}]};
-NTI1023410182.node = NNI1023410182;
-NTI1023410182.base = NTI687865937;
-var NNI989855753 = {kind: 2, len: 7, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "x", len: 0, typ: NTI184549387, name: "x", sons: null}, 
-{kind: 1, offset: "y", len: 0, typ: NTI184549387, name: "y", sons: null}, 
-{kind: 1, offset: "text", len: 0, typ: NTI33554450, name: "text", sons: null}, 
-{kind: 1, offset: "fontFamily", len: 0, typ: NTI33554450, name: "fontFamily", sons: null}, 
-{kind: 1, offset: "fontSize", len: 0, typ: NTI184549387, name: "fontSize", sons: null}, 
-{kind: 1, offset: "padding", len: 0, typ: NTI184549387, name: "padding", sons: null}, 
-{kind: 1, offset: "fill", len: 0, typ: NTI33554450, name: "fill", sons: null}]};
-NTI989855753.node = NNI989855753;
-NTI989855753.base = NTI687865937;
+NTI1040187398.node = NNI1040187398;
+NTI1040187398.base = NTI687865937;
 
 function toJSStr(s_33556901) {
   var result_33556902 = null;
@@ -145,272 +97,6 @@ function toJSStr(s_33556901) {
 
   return result_33556902;
 
-}
-
-function arrayConstr(len_33557314, value_33557315, typ_33557316) {
-        var result = new Array(len_33557314);
-    for (var i = 0; i < len_33557314; ++i) result[i] = nimCopy(null, value_33557315, typ_33557316);
-    return result;
-  
-
-  
-}
-
-function setConstr() {
-        var result = {};
-    for (var i = 0; i < arguments.length; ++i) {
-      var x = arguments[i];
-      if (typeof(x) == "object") {
-        for (var j = x[0]; j <= x[1]; ++j) {
-          result[j] = true;
-        }
-      } else {
-        result[x] = true;
-      }
-    }
-    return result;
-  
-
-  
-}
-var ConstSet1 = setConstr(17, 16, 4, 18, 27, 19, 23, 22, 21);
-
-function nimCopy(dest_33557268, src_33557269, ti_33557270) {
-  var result_33557279 = null;
-
-    switch (ti_33557270.kind) {
-    case 21:
-    case 22:
-    case 23:
-    case 5:
-      if (!(isFatPointer_33557259(ti_33557270))) {
-      result_33557279 = src_33557269;
-      }
-      else {
-        result_33557279 = [src_33557269[0], src_33557269[1]];
-      }
-      
-      break;
-    case 19:
-            if (dest_33557268 === null || dest_33557268 === undefined) {
-        dest_33557268 = {};
-      }
-      else {
-        for (var key in dest_33557268) { delete dest_33557268[key]; }
-      }
-      for (var key in src_33557269) { dest_33557268[key] = src_33557269[key]; }
-      result_33557279 = dest_33557268;
-    
-      break;
-    case 18:
-    case 17:
-      if (!((ti_33557270.base == null))) {
-      result_33557279 = nimCopy(dest_33557268, src_33557269, ti_33557270.base);
-      }
-      else {
-      if ((ti_33557270.kind == 17)) {
-      result_33557279 = (dest_33557268 === null || dest_33557268 === undefined) ? {m_type: ti_33557270} : dest_33557268;
-      }
-      else {
-        result_33557279 = (dest_33557268 === null || dest_33557268 === undefined) ? {} : dest_33557268;
-      }
-      }
-      nimCopyAux(result_33557279, src_33557269, ti_33557270.node);
-      break;
-    case 4:
-    case 16:
-            if(ArrayBuffer.isView(src_33557269)) { 
-        if(dest_33557268 === null || dest_33557268 === undefined || dest_33557268.length != src_33557269.length) {
-          dest_33557268 = new src_33557269.constructor(src_33557269);
-        } else {
-          dest_33557268.set(src_33557269, 0);
-        }
-        result_33557279 = dest_33557268;
-      } else {
-        if (src_33557269 === null) {
-          result_33557279 = null;
-        }
-        else {
-          if (dest_33557268 === null || dest_33557268 === undefined || dest_33557268.length != src_33557269.length) {
-            dest_33557268 = new Array(src_33557269.length);
-          }
-          result_33557279 = dest_33557268;
-          for (var i = 0; i < src_33557269.length; ++i) {
-            result_33557279[i] = nimCopy(result_33557279[i], src_33557269[i], ti_33557270.base);
-          }
-        }
-      }
-    
-      break;
-    case 24:
-    case 27:
-            if (src_33557269 === null) {
-        result_33557279 = null;
-      }
-      else {
-        if (dest_33557268 === null || dest_33557268 === undefined || dest_33557268.length != src_33557269.length) {
-          dest_33557268 = new Array(src_33557269.length);
-        }
-        result_33557279 = dest_33557268;
-        for (var i = 0; i < src_33557269.length; ++i) {
-          result_33557279[i] = nimCopy(result_33557279[i], src_33557269[i], ti_33557270.base);
-        }
-      }
-    
-      break;
-    case 28:
-            if (src_33557269 !== null) {
-        result_33557279 = src_33557269.slice(0);
-      }
-    
-      break;
-    default: 
-      result_33557279 = src_33557269;
-      break;
-    }
-
-  return result_33557279;
-
-}
-
-function mnewString(len_33557003) {
-        var result = new Array(len_33557003);
-    for (var i = 0; i < len_33557003; i++) {result[i] = 0;}
-    return result;
-  
-
-  
-}
-
-function addInt(a_33557050, b_33557051) {
-        var result = a_33557050 + b_33557051;
-    checkOverflowInt(result);
-    return result;
-  
-
-  
-}
-
-function chckIndx(i_33557319, a_33557320, b_33557321) {
-  var result_33557322 = 0;
-
-  BeforeRet: {
-    if (((a_33557320 <= i_33557319) && (i_33557319 <= b_33557321))) {
-    result_33557322 = i_33557319;
-    break BeforeRet;
-    }
-    else {
-    raiseIndexError(i_33557319, a_33557320, b_33557321);
-    }
-    
-  };
-
-  return result_33557322;
-
-}
-
-function cstrToNimstr(c_33556898) {
-      var ln = c_33556898.length;
-  var result = new Array(ln);
-  var r = 0;
-  for (var i = 0; i < ln; ++i) {
-    var ch = c_33556898.charCodeAt(i);
-
-    if (ch < 128) {
-      result[r] = ch;
-    }
-    else {
-      if (ch < 2048) {
-        result[r] = (ch >> 6) | 192;
-      }
-      else {
-        if (ch < 55296 || ch >= 57344) {
-          result[r] = (ch >> 12) | 224;
-        }
-        else {
-            ++i;
-            ch = 65536 + (((ch & 1023) << 10) | (c_33556898.charCodeAt(i) & 1023));
-            result[r] = (ch >> 18) | 240;
-            ++r;
-            result[r] = ((ch >> 12) & 63) | 128;
-        }
-        ++r;
-        result[r] = ((ch >> 6) & 63) | 128;
-      }
-      ++r;
-      result[r] = (ch & 63) | 128;
-    }
-    ++r;
-  }
-  return result;
-  
-
-  
-}
-
-function raiseException(e_33556653, ename_33556654) {
-    e_33556653.name = ename_33556654;
-    if ((excHandler == 0)) {
-    unhandledException(e_33556653);
-    }
-    
-    e_33556653.trace = nimCopy(null, rawWriteStackTrace_33556604(), NTI33554449);
-    throw e_33556653;
-
-  
-}
-
-function chckRange(i_33557324, a_33557325, b_33557326) {
-  var result_33557327 = 0;
-
-  BeforeRet: {
-    if (((a_33557325 <= i_33557324) && (i_33557324 <= b_33557326))) {
-    result_33557327 = i_33557324;
-    break BeforeRet;
-    }
-    else {
-    raiseRangeError();
-    }
-    
-  };
-
-  return result_33557327;
-
-}
-
-function subInt(a_33557054, b_33557055) {
-        var result = a_33557054 - b_33557055;
-    checkOverflowInt(result);
-    return result;
-  
-
-  
-}
-
-function eqStrings(a_33557041, b_33557042) {
-        if (a_33557041 == b_33557042) return true;
-    if (a_33557041 === null && b_33557042.length == 0) return true;
-    if (b_33557042 === null && a_33557041.length == 0) return true;
-    if ((!a_33557041) || (!b_33557042)) return false;
-    var alen = a_33557041.length;
-    if (alen != b_33557042.length) return false;
-    for (var i = 0; i < alen; ++i)
-      if (a_33557041[i] != b_33557042[i]) return false;
-    return true;
-  
-
-  
-}
-
-function makeNimstrLit(c_33556895) {
-      var result = [];
-  for (var i = 0; i < c_33556895.length; ++i) {
-    result[i] = c_33556895.charCodeAt(i);
-  }
-  return result;
-  
-
-  
 }
 var F = {procname: "module macros", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/core/macros.nim", line: 0};
 framePtr = F;
@@ -496,70 +182,88 @@ framePtr = F.prev;
 var F = {procname: "module jsffi", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/js/jsffi.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module shape", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/shape.nim", line: 0};
+var F = {procname: "module shape", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/shape.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module shape", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/shape.nim", line: 0};
+var F = {procname: "module shape", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/shape.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module circle", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/circle.nim", line: 0};
+var F = {procname: "module group", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/group.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module circle", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/circle.nim", line: 0};
+var F = {procname: "module group", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/group.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module rect", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/rect.nim", line: 0};
+var F = {procname: "module circle", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/circle.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module rect", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/rect.nim", line: 0};
+var F = {procname: "module circle", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/circle.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module text", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/text.nim", line: 0};
+var F = {procname: "module rect", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/rect.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module text", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/text.nim", line: 0};
+var F = {procname: "module rect", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/rect.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tag", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/tag.nim", line: 0};
+var F = {procname: "module text", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/text.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module tag", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/tag.nim", line: 0};
+var F = {procname: "module text", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/text.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module label", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/label.nim", line: 0};
+var F = {procname: "module tag", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/tag.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module label", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/label.nim", line: 0};
+var F = {procname: "module tag", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/tag.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module layer", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/layer/layer.nim", line: 0};
+var F = {procname: "module label", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/label.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module layer", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/layer/layer.nim", line: 0};
+var F = {procname: "module label", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/label.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module stage", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/stage/stage.nim", line: 0};
+var F = {procname: "module line", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/line.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module stage", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/stage/stage.nim", line: 0};
+var F = {procname: "module line", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/line.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module context", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/context/context.nim", line: 0};
+var F = {procname: "module arrow", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/arrow.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module context", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/context/context.nim", line: 0};
+var F = {procname: "module arrow", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/shapes/arrow.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module converters", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/common/converters.nim", line: 0};
+var F = {procname: "module layer", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/layer/layer.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module converters", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/common/converters.nim", line: 0};
+var F = {procname: "module layer", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/layer/layer.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module konva", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/konva.nim", line: 0};
+var F = {procname: "module stage", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/stage/stage.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
-var F = {procname: "module konva", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/konva.nim", line: 0};
+var F = {procname: "module stage", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/stage/stage.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module context", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/context/context.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module context", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/context/context.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module converters", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/common/converters.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module converters", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/common/converters.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module konva", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/konva.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module konva", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/konva.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
 
@@ -576,59 +280,28 @@ function newSeq_33556919(len_33556921) {
 
 }
 
-function newStage_1040187406(container_1040187407, width_1040187408, height_1040187409) {
-  var result_1040187410 = null;
+function newStage_1090519054(container_1090519055, width_1090519056, height_1090519057) {
+  var result_1090519058 = null;
 
-  var F = {procname: "stage.newStage", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/stage/stage.nim", line: 0};
+  var F = {procname: "stage.newStage", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/stage/stage.nim", line: 0};
   framePtr = F;
   BeforeRet: {
     F.line = 14;
     F.filename = "stage.nim";
-    var options_1040187411 = {};
+    var options_1090519059 = {};
     F.line = 15;
-    options_1040187411["container"] = toJSStr(container_1040187407);
+    options_1090519059["container"] = toJSStr(container_1090519055);
     F.line = 16;
-    options_1040187411["width"] = ((width_1040187408) | 0);
+    options_1090519059["width"] = ((width_1090519056) | 0);
     F.line = 17;
-    options_1040187411["height"] = ((height_1040187409) | 0);
+    options_1090519059["height"] = ((height_1090519057) | 0);
     F.line = 18;
-    result_1040187410 = new Konva.Stage(options_1040187411);
+    result_1090519058 = new Konva.Stage(options_1090519059);
     break BeforeRet;
   };
   framePtr = F.prev;
 
-  return result_1040187410;
-
-}
-
-function newCircle_536870917(x_536870919, y_536870920, radius_536870921, fill_536870922, stroke_536870923, strokeWidth_536870924) {
-  var result_536870925 = null;
-
-  var F = {procname: "newCircle.newCircle", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/circle.nim", line: 0};
-  framePtr = F;
-  BeforeRet: {
-    F.line = 10;
-    F.filename = "circle.nim";
-    var options_536870926 = {};
-    F.line = 11;
-    options_536870926["x"] = 250;
-    F.line = 12;
-    options_536870926["y"] = 250;
-    F.line = 13;
-    options_536870926["radius"] = 70;
-    F.line = 14;
-    options_536870926["fill"] = "red";
-    F.line = 15;
-    options_536870926["stroke"] = "black";
-    F.line = 16;
-    options_536870926["strokeWidth"] = 4;
-    F.line = 17;
-    result_536870925 = new Konva.Circle(options_536870926);
-    break BeforeRet;
-  };
-  framePtr = F.prev;
-
-  return result_536870925;
+  return result_1090519058;
 
 }
 
@@ -660,625 +333,405 @@ function HEX2F_33556020(x_33556021, y_33556022) {
 
 }
 
-function add_33556373(x_33556374, x_33556374_Idx, y_33556375) {
-          if (x_33556374[x_33556374_Idx] === null) { x_33556374[x_33556374_Idx] = []; }
-      var off = x_33556374[x_33556374_Idx].length;
-      x_33556374[x_33556374_Idx].length += y_33556375.length;
-      for (var i = 0; i < y_33556375.length; ++i) {
-        x_33556374[x_33556374_Idx][off+i] = y_33556375.charCodeAt(i);
-      }
-    
-
-  
-}
-
-function isFatPointer_33557259(ti_33557260) {
-  var result_33557261 = false;
-
-  BeforeRet: {
-    result_33557261 = !((ConstSet1[ti_33557260.base.kind] != undefined));
-    break BeforeRet;
-  };
-
-  return result_33557261;
-
-}
-
-function nimCopyAux(dest_33557272, src_33557273, n_33557274) {
-    switch (n_33557274.kind) {
-    case 0:
-      break;
-    case 1:
-            dest_33557272[n_33557274.offset] = nimCopy(dest_33557272[n_33557274.offset], src_33557273[n_33557274.offset], n_33557274.typ);
-    
-      break;
-    case 2:
-          for (var i = 0; i < n_33557274.sons.length; i++) {
-      nimCopyAux(dest_33557272, src_33557273, n_33557274.sons[i]);
-    }
-    
-      break;
-    case 3:
-            dest_33557272[n_33557274.offset] = nimCopy(dest_33557272[n_33557274.offset], src_33557273[n_33557274.offset], n_33557274.typ);
-      for (var i = 0; i < n_33557274.sons.length; ++i) {
-        nimCopyAux(dest_33557272, src_33557273, n_33557274.sons[i][1]);
-      }
-    
-      break;
-    }
-
-  
-}
-
-function raiseOverflow() {
-    raiseException({message: [111,118,101,114,45,32,111,114,32,117,110,100,101,114,102,108,111,119], parent: null, m_type: NTI134217743, name: null, trace: [], up: null}, "OverflowDefect");
-
-  
-}
-
-function checkOverflowInt(a_33557048) {
-        if (a_33557048 > 2147483647 || a_33557048 < -2147483648) raiseOverflow();
-  
-
-  
-}
-
-function raiseIndexError(i_33556812, a_33556813, b_33556814) {
-    var Temporary1;
-
-    if ((b_33556814 < a_33556813)) {
-    Temporary1 = [105,110,100,101,120,32,111,117,116,32,111,102,32,98,111,117,110,100,115,44,32,116,104,101,32,99,111,110,116,97,105,110,101,114,32,105,115,32,101,109,112,116,121];
-    }
-    else {
-    Temporary1 = ([105,110,100,101,120,32] || []).concat(HEX24_369098760(i_33556812) || [],[32,110,111,116,32,105,110,32] || [],HEX24_369098760(a_33556813) || [],[32,46,46,32] || [],HEX24_369098760(b_33556814) || []);
-    }
-    
-    raiseException({message: nimCopy(null, Temporary1, NTI33554449), parent: null, m_type: NTI134217749, name: null, trace: [], up: null}, "IndexDefect");
-
-  
-}
-
-function addChars_301990090(result_301990092, result_301990092_Idx, x_301990093, start_301990094, n_301990095) {
-    var Temporary1;
-
-  var F = {procname: "addChars.addChars", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/std/private/digitsutils.nim", line: 0};
+function createTriangle_536870916(context_536870917, shape_536870918) {
+  var F = {procname: "ex01_shapes.createTriangle", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/examples/ex01_shapes.nim", line: 0};
   framePtr = F;
-    F.line = 43;
-    F.filename = "digitsutils.nim";
-    var old_301990096 = (result_301990092[result_301990092_Idx]).length;
-    F.line = 44;
-    if (result_301990092[result_301990092_Idx].length < (Temporary1 = chckRange(addInt(old_301990096, n_301990095), 0, 2147483647), Temporary1)) { for (var i = result_301990092[result_301990092_Idx].length; i < Temporary1; ++i) result_301990092[result_301990092_Idx].push(0); }
-         else {result_301990092[result_301990092_Idx].length = Temporary1; };
-    Label2: {
-      F.line = 46;
-      var iHEX60gensym4_301990110 = 0;
-      F.line = 119;
-      F.filename = "iterators_1.nim";
-      var i_536871541 = 0;
-      Label3: {
-        F.line = 120;
-          Label4: while (true) {
-          if (!(i_536871541 < n_301990095)) break Label4;
-            F.line = 49;
-            F.filename = "digitsutils.nim";
-            iHEX60gensym4_301990110 = i_536871541;
-            F.line = 49;
-            result_301990092[result_301990092_Idx][chckIndx(addInt(old_301990096, iHEX60gensym4_301990110), 0, (result_301990092[result_301990092_Idx]).length - 1)] = x_301990093.charCodeAt(chckIndx(addInt(start_301990094, iHEX60gensym4_301990110), 0, (x_301990093).length - 1));
-            F.line = 122;
-            F.filename = "iterators_1.nim";
-            i_536871541 = addInt(i_536871541, 1);
-          }
+    F.line = 8;
+    F.filename = "ex01_shapes.nim";
+    context_536870917.beginPath();
+    F.line = 9;
+    context_536870917.moveTo(20, 50);
+    F.line = 10;
+    context_536870917.lineTo(220, 80);
+    F.line = 11;
+    context_536870917.quadraticCurveTo(150, 100, 260, 170);
+    F.line = 12;
+    context_536870917.closePath();
+    F.line = 15;
+    context_536870917.fillStrokeShape(shape_536870918);
+  framePtr = F.prev;
+
+  
+}
+
+function newTriangle_536870931() {
+    
+function innerHEX60gensym10_536870945() {
+      var result_536870946 = null;
+
+      var F = {procname: "newTriangle.inner`gensym10", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/js/jsffi.nim", line: 0};
+      framePtr = F;
+      BeforeRet: {
+        F.line = 425;
+        F.filename = "jsffi.nim";
+        var a_536870947 = null;
+        F.line = 426;
+        a_536870947 = {};
+        F.line = 434;
+        a_536870947.fill = "#00D2FF";
+        F.line = 434;
+        a_536870947.stroke = "black";
+        F.line = 434;
+        a_536870947.strokeWidth = 4;
+        F.line = 434;
+        a_536870947.sceneFunc = createTriangle_536870916;
+        F.line = 445;
+        result_536870946 = a_536870947;
+        break BeforeRet;
       };
-    };
-  framePtr = F.prev;
+      framePtr = F.prev;
 
-  
-}
+      return result_536870946;
 
-function addChars_301990086(result_301990088, result_301990088_Idx, x_301990089) {
-  var F = {procname: "addChars.addChars", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/std/private/digitsutils.nim", line: 0};
-  framePtr = F;
-    F.line = 55;
-    F.filename = "digitsutils.nim";
-    addChars_301990090(result_301990088, result_301990088_Idx, x_301990089, 0, ((x_301990089) == null ? 0 : (x_301990089).length));
-  framePtr = F.prev;
+    }
 
-  
-}
+  var result_536870932 = null;
 
-function addInt_301990111(result_301990112, result_301990112_Idx, x_301990113) {
-  var F = {procname: "digitsutils.addInt", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/std/private/digitsutils.nim", line: 0};
-  framePtr = F;
-    F.line = 111;
-    F.filename = "digitsutils.nim";
-    addChars_301990086(result_301990112, result_301990112_Idx, ((x_301990113) + ""));
-  framePtr = F.prev;
-
-  
-}
-
-function addInt_301990129(result_301990130, result_301990130_Idx, x_301990131) {
-  var F = {procname: "digitsutils.addInt", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/std/private/digitsutils.nim", line: 0};
-  framePtr = F;
-    F.line = 115;
-    F.filename = "digitsutils.nim";
-    addInt_301990111(result_301990130, result_301990130_Idx, BigInt(x_301990131));
-  framePtr = F.prev;
-
-  
-}
-
-function HEX24_369098760(x_369098761) {
-  var result_369098762 = [[]];
-
-  var F = {procname: "dollars.$", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/system/dollars.nim", line: 0};
+  var F = {procname: "ex01_shapes.newTriangle", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/examples/ex01_shapes.nim", line: 0};
   framePtr = F;
     F.line = 18;
-    F.filename = "dollars.nim";
-    addInt_301990129(result_369098762, 0, x_369098761);
-  framePtr = F.prev;
-
-  return result_369098762[0];
-
-}
-
-function auxWriteStackTrace_33556508(f_33556509) {
-  var result_33556510 = [[]];
-
-    var it_33556518 = f_33556509;
-    var i_33556519 = 0;
-    var total_33556520 = 0;
-    var tempFrames_33556521 = arrayConstr(64, {Field0: null, Field1: 0, Field2: null}, NTI33555835);
-    Label1: {
-        Label2: while (true) {
-        if (!(!((it_33556518 == null)) && (i_33556519 <= 63))) break Label2;
-          tempFrames_33556521[i_33556519].Field0 = it_33556518.procname;
-          tempFrames_33556521[i_33556519].Field1 = it_33556518.line;
-          tempFrames_33556521[i_33556519].Field2 = it_33556518.filename;
-          i_33556519 += 1;
-          total_33556520 += 1;
-          it_33556518 = it_33556518.prev;
-        }
-    };
-    Label3: {
-        Label4: while (true) {
-        if (!!((it_33556518 == null))) break Label4;
-          total_33556520 += 1;
-          it_33556518 = it_33556518.prev;
-        }
-    };
-    result_33556510[0] = nimCopy(null, [], NTI33554449);
-    if (!((total_33556520 == i_33556519))) {
-    result_33556510[0].push.apply(result_33556510[0], [40]);;
-    result_33556510[0].push.apply(result_33556510[0], HEX24_369098760((total_33556520 - i_33556519)));;
-    result_33556510[0].push.apply(result_33556510[0], [32,99,97,108,108,115,32,111,109,105,116,116,101,100,41,32,46,46,46,10]);;
-    }
-    
-    Label5: {
-      var j_33556554 = 0;
-      var colontmp__536871533 = 0;
-      colontmp__536871533 = (i_33556519 - 1);
-      var res_536871535 = colontmp__536871533;
-      Label6: {
-          Label7: while (true) {
-          if (!(0 <= res_536871535)) break Label7;
-            j_33556554 = res_536871535;
-            result_33556510[0].push.apply(result_33556510[0], cstrToNimstr(tempFrames_33556521[j_33556554].Field2));;
-            if ((0 < tempFrames_33556521[j_33556554].Field1)) {
-            result_33556510[0].push.apply(result_33556510[0], [40]);;
-            addInt_301990129(result_33556510, 0, tempFrames_33556521[j_33556554].Field1);
-            if (false) {
-            result_33556510[0].push.apply(result_33556510[0], [44,32]);;
-            addInt_301990129(result_33556510, 0, 0);
-            }
-            
-            result_33556510[0].push.apply(result_33556510[0], [41]);;
-            }
-            
-            result_33556510[0].push.apply(result_33556510[0], [32,97,116,32]);;
-            add_33556373(result_33556510, 0, tempFrames_33556521[j_33556554].Field0);
-            result_33556510[0].push.apply(result_33556510[0], [10]);;
-            res_536871535 -= 1;
-          }
-      };
-    };
-
-  return result_33556510[0];
-
-}
-
-function rawWriteStackTrace_33556604() {
-  var result_33556605 = [];
-
-    if (!((framePtr == null))) {
-    result_33556605 = nimCopy(null, ([84,114,97,99,101,98,97,99,107,32,40,109,111,115,116,32,114,101,99,101,110,116,32,99,97,108,108,32,108,97,115,116,41,10] || []).concat(auxWriteStackTrace_33556508(framePtr) || []), NTI33554449);
-    }
-    else {
-      result_33556605 = nimCopy(null, [78,111,32,115,116,97,99,107,32,116,114,97,99,101,98,97,99,107,32,97,118,97,105,108,97,98,108,101,10], NTI33554449);
-    }
-    
-
-  return result_33556605;
-
-}
-
-function unhandledException(e_33556649) {
-    var buf_33556650 = [[]];
-    if (!(((e_33556649.message).length == 0))) {
-    buf_33556650[0].push.apply(buf_33556650[0], [69,114,114,111,114,58,32,117,110,104,97,110,100,108,101,100,32,101,120,99,101,112,116,105,111,110,58,32]);;
-    buf_33556650[0].push.apply(buf_33556650[0], e_33556649.message);;
-    }
-    else {
-    buf_33556650[0].push.apply(buf_33556650[0], [69,114,114,111,114,58,32,117,110,104,97,110,100,108,101,100,32,101,120,99,101,112,116,105,111,110]);;
-    }
-    
-    buf_33556650[0].push.apply(buf_33556650[0], [32,91]);;
-    add_33556373(buf_33556650, 0, e_33556649.name);
-    buf_33556650[0].push.apply(buf_33556650[0], [93,10]);;
-    buf_33556650[0].push.apply(buf_33556650[0], rawWriteStackTrace_33556604());;
-    var cbuf_33556651 = toJSStr(buf_33556650[0]);
-    framePtr = null;
-      if (typeof(Error) !== "undefined") {
-    throw new Error(cbuf_33556651);
-  }
-  else {
-    throw cbuf_33556651;
-  }
-  
-
-  
-}
-
-function raiseRangeError() {
-    raiseException({message: [118,97,108,117,101,32,111,117,116,32,111,102,32,114,97,110,103,101], parent: null, m_type: NTI134217751, name: null, trace: [], up: null}, "RangeDefect");
-
-  
-}
-
-function newShape_939524101(sceneFunc_939524105, fill_939524106, stroke_939524107, strokeWidth_939524108) {
-  var result_939524109 = null;
-
-  var F = {procname: "shape.newShape", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/shape.nim", line: 0};
-  framePtr = F;
-    F.line = 12;
-    F.filename = "shape.nim";
-    var options_939524110 = {};
-    F.line = 13;
-    options_939524110["sceneFunc"] = sceneFunc_939524105;
-    F.line = 14;
-    options_939524110["fill"] = toJSStr(fill_939524106);
-    F.line = 15;
-    options_939524110["stroke"] = toJSStr(stroke_939524107);
-    F.line = 16;
-    options_939524110["strokeWidth"] = chckRange(strokeWidth_939524108, (-2147483648), 2147483647);
-  framePtr = F.prev;
-
-  return result_939524109;
-
-}
-
-function createTriangle_1073741852(context_1073741853, shape_1073741854) {
-  var F = {procname: "context.createTriangle", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/context/context.nim", line: 0};
-  framePtr = F;
-    context_1073741853.beginPath();
-    context_1073741853.moveTo((20), (50));
-    context_1073741853.lineTo((220), (80));
-    context_1073741853.quadraticCurveTo((150), (100), (260), (170));
-    context_1073741853.closePath();
-    context_1073741853.fillStrokeShape((shape_1073741854));
-  framePtr = F.prev;
-
-  
-}
-
-function newTriangle_1073741955() {
-  var result_1073741956 = null;
-
-  var F = {procname: "context.newTriangle", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/context/context.nim", line: 0};
-  framePtr = F;
-  BeforeRet: {
-    F.line = 27;
-    F.filename = "context.nim";
-    result_1073741956 = newShape_939524101(createTriangle_1073741852, [35,48,48,68,50,70,70], [98,108,97,99,107], 4);
-    break BeforeRet;
-  };
-  framePtr = F.prev;
-
-  return result_1073741956;
-
-}
-
-function HEX3DHEX3D_536871042(x_536871044, y_536871045) {
-  var result_536871046 = false;
-
-  var F = {procname: "==.==", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/system/comparisons.nim", line: 0};
-  framePtr = F;
-  BeforeRet: {
-    F.line = 326;
-    F.filename = "comparisons.nim";
-    var sameObject_536871054 = false;
-    F.line = 327;
-    sameObject_536871054 = x_536871044 === y_536871045
-    if (sameObject_536871054) {
-    F.line = 328;
-    result_536871046 = true;
-    break BeforeRet;
-    }
-    
-    if (!(((x_536871044).length == (y_536871045).length))) {
-    F.line = 331;
-    result_536871046 = false;
-    break BeforeRet;
-    }
-    
-    Label1: {
-      F.line = 333;
-      var i_536871068 = 0;
-      F.line = 75;
-      F.filename = "iterators_1.nim";
-      var colontmp__536871544 = 0;
-      F.line = 333;
-      F.filename = "comparisons.nim";
-      colontmp__536871544 = subInt((x_536871044).length, 1);
-      F.line = 90;
-      F.filename = "iterators_1.nim";
-      var res_536871546 = 0;
-      Label2: {
-        F.line = 91;
-          Label3: while (true) {
-          if (!(res_536871546 <= colontmp__536871544)) break Label3;
-            F.line = 333;
-            F.filename = "comparisons.nim";
-            i_536871068 = res_536871546;
-            if (!((x_536871044[chckIndx(i_536871068, 0, (x_536871044).length - 1)] == y_536871045[chckIndx(i_536871068, 0, (y_536871045).length - 1)]))) {
-            F.line = 335;
-            result_536871046 = false;
-            break BeforeRet;
-            }
-            
-            F.line = 93;
-            F.filename = "iterators_1.nim";
-            res_536871546 = addInt(res_536871546, 1);
-          }
-      };
-    };
-    F.line = 337;
-    F.filename = "comparisons.nim";
-    result_536871046 = true;
-    break BeforeRet;
-  };
-  framePtr = F.prev;
-
-  return result_536871046;
-
-}
-
-function newRect_536870975(x_536870977, y_536870978, width_536870979, height_536870980, fill_536870981, stroke_536870982, strokeWidth_536870983, cornerRadius_536870984, cornerRadiusSeq_536870985, shadowColor_536870986, shadowBlur_536870987, shadowOffsetX_536870988, shadowOffsetY_536870989, shadowOpacity_536870990) {
-  var result_536870991 = null;
-
-  var F = {procname: "newRect.newRect", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/rect.nim", line: 0};
-  framePtr = F;
-  BeforeRet: {
-    F.line = 27;
-    F.filename = "rect.nim";
-    var options_536870992 = {};
-    F.line = 28;
-    options_536870992["x"] = x_536870977;
-    F.line = 29;
-    options_536870992["y"] = y_536870978;
-    F.line = 30;
-    options_536870992["width"] = width_536870979;
-    F.line = 31;
-    options_536870992["height"] = height_536870980;
-    F.line = 32;
-    options_536870992["fill"] = toJSStr(fill_536870981);
-    F.line = 33;
-    options_536870992["stroke"] = toJSStr(stroke_536870982);
-    F.line = 34;
-    options_536870992["strokeWidth"] = chckRange(strokeWidth_536870983, (-2147483648), 2147483647);
-    F.line = 35;
-    options_536870992["shadowBlur"] = chckRange(shadowBlur_536870987, (-2147483648), 2147483647);
-    if ((0 < cornerRadius_536870984)) {
-    F.line = 37;
-    options_536870992["cornerRadius"] = chckRange(cornerRadius_536870984, (-2147483648), 2147483647);
-    }
-    else {
-    if (!(HEX3DHEX3D_536871042(cornerRadiusSeq_536870985, []))) {
-    F.line = 39;
-    options_536870992["cornerRadius"] = cornerRadiusSeq_536870985;
-    }
-    }
-    if (!(eqStrings(shadowColor_536870986, []))) {
-    F.line = 41;
-    options_536870992["shadowColor"] = toJSStr(shadowColor_536870986);
-    }
-    
-    if ((0 < shadowBlur_536870987)) {
-    F.line = 43;
-    options_536870992["shadowBlur"] = chckRange(shadowBlur_536870987, (-2147483648), 2147483647);
-    }
-    
-    if (!((shadowOffsetX_536870988 == 0))) {
-    F.line = 45;
-    options_536870992["shadowOffsetX"] = ((shadowOffsetX_536870988) | 0);
-    }
-    
-    if (!((shadowOffsetY_536870989 == 0))) {
-    F.line = 47;
-    options_536870992["shadowOffsetY"] = ((shadowOffsetY_536870989) | 0);
-    }
-    
-    if (!((shadowOpacity_536870990 == 0.0))) {
-    F.line = 49;
-    options_536870992["shadowOpacity"] = shadowOpacity_536870990;
-    }
-    
-    F.line = 50;
-    result_536870991 = new Konva.Rect(options_536870992);
-    break BeforeRet;
-  };
-  framePtr = F.prev;
-
-  return result_536870991;
-
-}
-
-function newText_536871170(x_536871172, y_536871173, text_536871174, fontSize_536871175, fontFamily_536871176, fill_536871177, align_536871178, width_536871179, padding_536871180) {
-  var result_536871181 = null;
-
-  var F = {procname: "newText.newText", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/text.nim", line: 0};
-  framePtr = F;
-  BeforeRet: {
-    F.line = 26;
-    F.filename = "text.nim";
-    var options_536871182 = {};
-    F.line = 27;
-    options_536871182["x"] = x_536871172;
-    F.line = 28;
-    options_536871182["y"] = y_536871173;
-    F.line = 29;
-    options_536871182["text"] = toJSStr(text_536871174);
-    F.line = 30;
-    options_536871182["fontSize"] = chckRange(fontSize_536871175, (-2147483648), 2147483647);
-    F.line = 31;
-    options_536871182["fontFamily"] = toJSStr(fontFamily_536871176);
-    F.line = 32;
-    options_536871182["fill"] = toJSStr(fill_536871177);
-    if (!(eqStrings(align_536871178, []))) {
-    F.line = 34;
-    options_536871182["align"] = toJSStr(align_536871178);
-    }
-    
-    if ((0 < width_536871179)) {
-    F.line = 36;
-    options_536871182["width"] = ((width_536871179) | 0);
-    }
-    
-    if ((0 < padding_536871180)) {
-    F.line = 38;
-    options_536871182["padding"] = ((padding_536871180) | 0);
-    }
-    
-    F.line = 39;
-    result_536871181 = new Konva.Text(options_536871182);
-    break BeforeRet;
-  };
-  framePtr = F.prev;
-
-  return result_536871181;
-
-}
-
-function newText_536871248(x_536871250, y_536871251, text_536871252, fontSize_536871253, fontFamily_536871254, fill_536871255, align_536871256, width_536871257, padding_536871258) {
-  var result_536871259 = null;
-
-  var F = {procname: "newText.newText", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/src/shapes/text.nim", line: 0};
-  framePtr = F;
-  BeforeRet: {
-    F.line = 26;
-    F.filename = "text.nim";
-    var options_536871260 = {};
-    F.line = 27;
-    options_536871260["x"] = x_536871250;
-    F.line = 28;
-    options_536871260["y"] = y_536871251;
-    F.line = 29;
-    options_536871260["text"] = toJSStr(text_536871252);
-    F.line = 30;
-    options_536871260["fontSize"] = chckRange(fontSize_536871253, (-2147483648), 2147483647);
-    F.line = 31;
-    options_536871260["fontFamily"] = toJSStr(fontFamily_536871254);
-    F.line = 32;
-    options_536871260["fill"] = toJSStr(fill_536871255);
-    if (!(eqStrings(align_536871256, []))) {
-    F.line = 34;
-    options_536871260["align"] = toJSStr(align_536871256);
-    }
-    
-    if ((0 < width_536871257)) {
-    F.line = 36;
-    options_536871260["width"] = ((width_536871257) | 0);
-    }
-    
-    if ((0 < padding_536871258)) {
-    F.line = 38;
-    options_536871260["padding"] = ((padding_536871258) | 0);
-    }
-    
-    F.line = 39;
-    result_536871259 = new Konva.Text(options_536871260);
-    break BeforeRet;
-  };
-  framePtr = F.prev;
-
-  return result_536871259;
-
-}
-
-function main_536870914() {
-  var F = {procname: "ex01_shapes.main", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/examples/ex01_shapes.nim", line: 0};
-  framePtr = F;
-    F.line = 4;
     F.filename = "ex01_shapes.nim";
-    var stage_536870915 = newStage_1040187406([99,111,110,116,97,105,110,101,114], 500, 500);
-    F.line = 5;
-    var layer_536870916 = new Konva.Layer();
-    F.line = 6;
-    var circle_536870973 = newCircle_536870917(HEX2F_33556020(((stage_536870915.width()) | 0), 2), HEX2F_33556020(((stage_536870915.height()) | 0), 2), 70.0, [114,101,100], [98,108,97,99,107], 4);
-    F.line = 8;
-    var triangle_536870974 = newTriangle_1073741955();
-    F.line = 9;
-    var rect1_536871131 = newRect_536870975(20, 20, 100, 50, [103,114,101,101,110], [98,108,97,99,107], 4, 0, [], [], 0, 0, 0, 0.0);
-    F.line = 10;
-    var rect2_536871148 = newRect_536870975(150, 40, 100, 50, [114,101,100], [98,108,97,99,107], 0, 10, [], [], 10, 0, 0, 0.0);
-    F.line = 11;
-    var rect3_536871169 = newRect_536870975(50, 120, 100, 100, [98,108,117,101], [98,108,97,99,107], 0, 0, [0, 10, 20, 30], [], 0, 0, 0, 0.0);
-    F.line = 12;
-    layer_536870916.add(rect1_536871131);
+    result_536870932 = new Konva.Shape(innerHEX60gensym10_536870945());
+  framePtr = F.prev;
+
+  return result_536870932;
+
+}
+
+function toCdouble_536871164(val_536871166) {
+  var result_536871167 = 0.0;
+
+  var F = {procname: "toCdouble.toCdouble", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/src/common/converters.nim", line: 0};
+  framePtr = F;
     F.line = 13;
-    layer_536870916.add(rect2_536871148);
-    F.line = 14;
-    layer_536870916.add(rect3_536871169);
-    F.line = 16;
-    var simpleText_536871247 = newText_536871170(HEX2F_33556020(((stage_536870915.width()) | 0), 2), 15.0, [83,105,109,112,108,101,32,84,101,120,116], 30, [67,97,108,105,98,114,105], [103,114,101,101,110], [], 0, 0);
-    F.line = 19;
-    simpleText_536871247.offsetX(((HEX2F_33556020(((simpleText_536871247.width()) | 0), 2)) | 0));
-    F.line = 20;
-    layer_536870916.add(simpleText_536871247);
-    F.line = 25;
-    var complexText_536871309 = newText_536871248(20, 60, makeNimstrLit("COMPLEX TEXT\x0All the world\'s a stage, and all the men and women merely players. They have their exits and their entrances."), 18, [67,97,108,105,98,114,105], [35,53,53,53], [99,101,110,116,101,114], 300, 20);
-    F.line = 31;
-    var rect_536871326 = newRect_536870975(20, 60, 300, ((complexText_536871309.height()) | 0), [35,100,100,100], [35,53,53,53], 5, 10, [], [98,108,97,99,107], 10, 10, 10, 0.2);
-    F.line = 35;
-    layer_536870916.add(rect_536871326);
-    F.line = 36;
-    layer_536870916.add(complexText_536871309);
-    F.line = 39;
-    var tooltip_536871327 = new Konva.Label({x: 170, y: 75, opacity: 0.75, m_type: NTI1006632969});
-    F.line = 40;
-    var tag_536871328 = new Konva.Tag({fill: "black", pointerDirection: "down", pointerWidth: 10, pointerHeight: 10, lineJoin: "round", shadowColor: "black", shadowBlur: 10, shadowOffsetX: 10, shadowOffsetY: 10, shadowOpacity: 0.5, m_type: NTI1023410182});
-    F.line = 50;
-    var tooltipText_536871332 = new Konva.Text({text: "Tooltip pointing down", fontFamily: "Calibri", fontSize: 18, padding: 5, fill: "white", m_type: NTI989855753, x: 0, y: 0});
-    F.line = 55;
-    tooltip_536871327.add(tag_536871328);
+    F.filename = "converters.nim";
+    result_536871167 = val_536871166;
+  framePtr = F.prev;
+
+  return result_536871167;
+
+}
+
+function main_536871011() {
+    
+function innerHEX60gensym25_536871016() {
+      var result_536871017 = null;
+
+      var F = {procname: "main.inner`gensym25", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/js/jsffi.nim", line: 0};
+      framePtr = F;
+      BeforeRet: {
+        F.line = 425;
+        F.filename = "jsffi.nim";
+        var a_536871018 = null;
+        F.line = 426;
+        a_536871018 = {};
+        F.line = 434;
+        a_536871018.x = HEX2F_33556020(((stage_536871012.width()) | 0), 2);
+        F.line = 43;
+        F.filename = "ex01_shapes.nim";
+        a_536871018.y = HEX2F_33556020(((stage_536871012.height()) | 0), 2);
+        F.line = 434;
+        F.filename = "jsffi.nim";
+        a_536871018.radius = 70.0;
+        F.line = 434;
+        a_536871018.fill = "red";
+        F.line = 434;
+        a_536871018.stroke = "black";
+        F.line = 434;
+        a_536871018.strokeWidth = 4;
+        F.line = 445;
+        result_536871017 = a_536871018;
+        break BeforeRet;
+      };
+      framePtr = F.prev;
+
+      return result_536871017;
+
+    }
+    
+function innerHEX60gensym42_536871043() {
+      var result_536871044 = null;
+
+      var F = {procname: "main.inner`gensym42", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/js/jsffi.nim", line: 0};
+      framePtr = F;
+      BeforeRet: {
+        F.line = 425;
+        F.filename = "jsffi.nim";
+        var a_536871045 = null;
+        F.line = 426;
+        a_536871045 = {};
+        F.line = 434;
+        a_536871045.x = 20.0;
+        F.line = 434;
+        a_536871045.y = 20.0;
+        F.line = 434;
+        a_536871045.width = 100.0;
+        F.line = 434;
+        a_536871045.height = 50.0;
+        F.line = 434;
+        a_536871045.fill = "green";
+        F.line = 434;
+        a_536871045.stroke = "black";
+        F.line = 434;
+        a_536871045.strokeWidth = 4.0;
+        F.line = 445;
+        result_536871044 = a_536871045;
+        break BeforeRet;
+      };
+      framePtr = F.prev;
+
+      return result_536871044;
+
+    }
+    
+function innerHEX60gensym61_536871065() {
+      var result_536871066 = null;
+
+      var F = {procname: "main.inner`gensym61", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/js/jsffi.nim", line: 0};
+      framePtr = F;
+      BeforeRet: {
+        F.line = 425;
+        F.filename = "jsffi.nim";
+        var a_536871067 = null;
+        F.line = 426;
+        a_536871067 = {};
+        F.line = 434;
+        a_536871067.x = 150.0;
+        F.line = 434;
+        a_536871067.y = 40.0;
+        F.line = 434;
+        a_536871067.width = 100.0;
+        F.line = 434;
+        a_536871067.height = 50.0;
+        F.line = 434;
+        a_536871067.fill = "red";
+        F.line = 434;
+        a_536871067.stroke = "black";
+        F.line = 434;
+        a_536871067.shadowBlur = 10;
+        F.line = 434;
+        a_536871067.cornerRadius = 10.0;
+        F.line = 445;
+        result_536871066 = a_536871067;
+        break BeforeRet;
+      };
+      framePtr = F.prev;
+
+      return result_536871066;
+
+    }
+    
+function innerHEX60gensym76_536871071() {
+      var result_536871072 = null;
+
+      var F = {procname: "main.inner`gensym76", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/js/jsffi.nim", line: 0};
+      framePtr = F;
+      BeforeRet: {
+        F.line = 425;
+        F.filename = "jsffi.nim";
+        var a_536871073 = null;
+        F.line = 426;
+        a_536871073 = {};
+        F.line = 434;
+        a_536871073.x = HEX2F_33556020(((stage_536871012.width()) | 0), 2);
+        F.line = 434;
+        a_536871073.y = 15.0;
+        F.line = 434;
+        a_536871073.text = "Simple Text";
+        F.line = 434;
+        a_536871073.fontSize = 30;
+        F.line = 434;
+        a_536871073.fontFamily = "Calibri";
+        F.line = 436;
+        a_536871073.stroke = [103,114,101,101,110];
+        F.line = 445;
+        result_536871072 = a_536871073;
+        break BeforeRet;
+      };
+      framePtr = F.prev;
+
+      return result_536871072;
+
+    }
+    
+function innerHEX60gensym99_536871122() {
+      var result_536871123 = null;
+
+      var F = {procname: "main.inner`gensym99", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/js/jsffi.nim", line: 0};
+      framePtr = F;
+      BeforeRet: {
+        F.line = 425;
+        F.filename = "jsffi.nim";
+        var a_536871124 = null;
+        F.line = 426;
+        a_536871124 = {};
+        F.line = 434;
+        a_536871124.x = 20.0;
+        F.line = 434;
+        a_536871124.y = 60.0;
+        F.line = 434;
+        a_536871124.text = "COMPLEX TEXT\nll the world's a stage, and all the men and women merely players. They have their exits and their entrances.";
+        F.line = 434;
+        a_536871124.fontSize = 18;
+        F.line = 434;
+        a_536871124.fontFamily = "Calibri";
+        F.line = 436;
+        a_536871124.stroke = [35,53,53,53];
+        F.line = 436;
+        a_536871124.width = 300;
+        F.line = 434;
+        a_536871124.padding = 20;
+        F.line = 434;
+        a_536871124.align = "center";
+        F.line = 445;
+        result_536871123 = a_536871124;
+        break BeforeRet;
+      };
+      framePtr = F.prev;
+
+      return result_536871123;
+
+    }
+    
+function innerHEX60gensym132_536871161() {
+      var result_536871162 = null;
+
+      var F = {procname: "main.inner`gensym132", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/js/jsffi.nim", line: 0};
+      framePtr = F;
+      BeforeRet: {
+        F.line = 425;
+        F.filename = "jsffi.nim";
+        var a_536871163 = null;
+        F.line = 426;
+        a_536871163 = {};
+        F.line = 434;
+        a_536871163.x = 20.0;
+        F.line = 434;
+        a_536871163.y = 60.0;
+        F.line = 434;
+        a_536871163.width = 300.0;
+        F.line = 434;
+        a_536871163.height = toCdouble_536871164(complexText_536871158.height());
+        F.line = 434;
+        a_536871163.fill = "#ddd";
+        F.line = 434;
+        a_536871163.stroke = "#555";
+        F.line = 434;
+        a_536871163.strokeWidth = 5.0;
+        F.line = 434;
+        a_536871163.shadowColor = "black";
+        F.line = 434;
+        a_536871163.shadowBlur = 10;
+        F.line = 434;
+        a_536871163.shadowOffsetX = 10;
+        F.line = 436;
+        a_536871163.shadowOffsetY = 10;
+        F.line = 434;
+        a_536871163.shadowOpacity = 0.2;
+        F.line = 434;
+        a_536871163.cornerRadius = 10.0;
+        F.line = 445;
+        result_536871162 = a_536871163;
+        break BeforeRet;
+      };
+      framePtr = F.prev;
+
+      return result_536871162;
+
+    }
+    
+function innerHEX60gensym147_536871190() {
+      var result_536871191 = null;
+
+      var F = {procname: "main.inner`gensym147", prev: framePtr, filename: "/home/jose/.choosenim/toolchains/nim-2.0.2/lib/js/jsffi.nim", line: 0};
+      framePtr = F;
+      BeforeRet: {
+        F.line = 425;
+        F.filename = "jsffi.nim";
+        var a_536871192 = null;
+        F.line = 426;
+        a_536871192 = {};
+        F.line = 434;
+        a_536871192.text = "Tooltip pointing down";
+        F.line = 434;
+        a_536871192.fontFamily = "Calibri";
+        F.line = 434;
+        a_536871192.fontSize = 18;
+        F.line = 434;
+        a_536871192.padding = 5;
+        F.line = 434;
+        a_536871192.fill = "white";
+        F.line = 445;
+        result_536871191 = a_536871192;
+        break BeforeRet;
+      };
+      framePtr = F.prev;
+
+      return result_536871191;
+
+    }
+
+  var F = {procname: "ex01_shapes.main", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/examples/ex01_shapes.nim", line: 0};
+  framePtr = F;
+    F.line = 41;
+    F.filename = "ex01_shapes.nim";
+    var stage_536871012 = newStage_1090519054([99,111,110,116,97,105,110,101,114], 1000, 800);
+    F.line = 42;
+    var layer_536871013 = new Konva.Layer();
+    F.line = 43;
+    var circle_536871039 = new Konva.Circle(innerHEX60gensym25_536871016());
+    F.line = 45;
+    var triangle_536871040 = newTriangle_536870931();
+    F.line = 46;
+    var rect1_536871062 = new Konva.Rect(innerHEX60gensym42_536871043());
+    F.line = 48;
+    var rect2_536871068 = new Konva.Rect(innerHEX60gensym61_536871065());
+    F.line = 52;
+    layer_536871013.add(rect1_536871062);
+    F.line = 53;
+    layer_536871013.add(rect2_536871068);
     F.line = 56;
-    tooltip_536871327.add(tooltipText_536871332);
-    F.line = 57;
-    layer_536870916.add(tooltip_536871327);
-    F.line = 58;
-    stage_536870915.add(layer_536870916);
-    F.line = 59;
-    layer_536870916.draw();
+    var simpleText_536871119 = new Konva.Text(innerHEX60gensym76_536871071());
+    F.line = 60;
+    simpleText_536871119.offsetX(((HEX2F_33556020(((simpleText_536871119.width()) | 0), 2)) | 0));
+    F.line = 61;
+    layer_536871013.add(simpleText_536871119);
+    F.line = 66;
+    var complexText_536871158 = new Konva.Text(innerHEX60gensym99_536871122());
+    F.line = 72;
+    var rect_536871185 = new Konva.Rect(innerHEX60gensym132_536871161());
+    F.line = 77;
+    layer_536871013.add(rect_536871185);
+    F.line = 78;
+    layer_536871013.add(complexText_536871158);
+    F.line = 81;
+    var tooltip_536871186 = new Konva.Label({x: 300, y: 200, opacity: 0.75, m_type: NTI1023410185});
+    F.line = 82;
+    var tag_536871187 = new Konva.Tag({fill: "black", pointerDirection: "down", pointerWidth: 10, pointerHeight: 10, lineJoin: "round", shadowColor: "black", shadowBlur: 10, shadowOffsetX: 10, shadowOffsetY: 10, shadowOpacity: 0.5, m_type: NTI1040187398});
+    F.line = 92;
+    var tooltipText_536871196 = new Konva.Text(innerHEX60gensym147_536871190());
+    F.line = 97;
+    tooltip_536871186.add(tag_536871187);
+    F.line = 98;
+    tooltip_536871186.add(tooltipText_536871196);
+    F.line = 99;
+    layer_536871013.add(tooltip_536871186);
+    F.line = 100;
+    layer_536871013.add(triangle_536871040);
+    F.line = 101;
+    stage_536871012.add(layer_536871013);
+    F.line = 102;
+    layer_536871013.draw();
   framePtr = F.prev;
 
   
 }
-var F = {procname: "module ex01_shapes", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/examples/ex01_shapes.nim", line: 0};
+var F = {procname: "module ex01_shapes", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/examples/ex01_shapes.nim", line: 0};
 framePtr = F;
-F.line = 61;
+F.line = 104;
 F.filename = "ex01_shapes.nim";
-main_536870914();
+main_536871011();
 framePtr = F.prev;
-var F = {procname: "module ex01_shapes", prev: framePtr, filename: "/home/jose/src/nimlang/konvajs.nim/examples/ex01_shapes.nim", line: 0};
+var F = {procname: "module ex01_shapes", prev: framePtr, filename: "/home/jose/src/nimlang/konva.nim/examples/ex01_shapes.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;

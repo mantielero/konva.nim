@@ -1,9 +1,15 @@
 import konva
 import std/strformat
 import std/jsconsole
+import std/dom
 
 type
-  StepObj* = GroupObj
+  # StepObj = object of GroupObj
+
+  StepObj* = ref object of GroupObj
+    ins*:seq[GroupObj] 
+    outs*:seq[GroupObj]
+
     
 
   Step* = ref object of Group
@@ -78,7 +84,7 @@ proc newStep*(val:Step):StepObj =
                                      fontSize:20, fontFamily:"Arial", fill:"blue",
                                      align:"left", padding:10 } )
     actioneeTxt.offsetY(-h)
-    h +=  actioneeTxt.height()
+    h =  h + actioneeTxt.height().int
 
 
 
@@ -96,13 +102,17 @@ proc newStep*(val:Step):StepObj =
   group.add(rect) 
   rect.zIndex(0)
 
+  var tmp = group.StepObj
+  tmp.ins = @[]
+  tmp.outs = @[]
 
-  return group
+  return tmp #group.StepObj
 
 type
   ConnectionObj* = GroupObj
 
 proc connect(step1,step2:StepObj):ConnectionObj =
+
   var start = step1.getRightAnchor() #(x:200, y:100)
   var ending = step2.getLeftAnchor() #(x:300, y:100)
   console.log start
@@ -117,17 +127,67 @@ proc connect(step1,step2:StepObj):ConnectionObj =
   let circle2 = newCircle(Circle{x:group.width(),y: 0, radius:6, 
                   stroke: "black", fill: "white", strokeWidth:4})                  
   let arrow = newArrow(Arrow{ points: @[(0+6).cint,0,(group.width().int - 6 - 4).cint,0], stroke: "black", strokeWidth: 4})
+
   group.add(circle1)
   group.add(circle2)
   group.add(arrow)
+
+  step1.outs &= group  
+  step2.ins &= group
   return group
 
+#proc updateArrow(shape,arrow:GroupObj) =
 
 
 
 
 
+proc update(evt:Event) =
+  #console.log("target: ", typeof(evt.target) ) #children[0])
+  var shape = evt.target.toJS().ShapeObj
+  var shapeX = shape.x().int
+  var shapeY = shape.y().int
+  var shapeWidth = shape.width().int
+  var shapeHeight = shape.height().int
 
+  for arrowGroup in shape.ins:
+    var myPoints = arrowGroup.children[2].points()
+    var arrowX = arrowGroup.x()
+    var arrowY = arrowGroup.y()
+    #var arrowWidth = arrowGroup.width()
+    #var tmpX = 100 # arrowGroup.children[1].x().to(int)
+    #console.log tmpX + shapeX
+    arrowGroup.children[1].y(shapeY)
+    arrowGroup.children[1].x(shapeX.cint - shapeWidth.cint)    
+    arrowGroup.children[2].setPoints( @[myPoints[0].to(cint),
+                                     myPoints[1].to(cint),
+                                     (shapeX - shapeWidth - 6 - 4).cint,
+                                     shapeY.cint]  )
+  for arrowGroup in shape.outs:
+    #console.log ">>>"
+    var myPoints = arrowGroup.children[2].points()
+    #console.log myPoints
+    #var arrowX = arrowGroup.x()
+    #var arrowY = arrowGroup.y()
+    #var arrowWidth = arrowGroup.width()
+    #var tmpX = 100 # arrowGroup.children[1].x().to(int)
+    #console.log tmpX + shapeX
+    arrowGroup.children[0].y(shapeY)
+    arrowGroup.children[0].x(shapeX.cint)    
+
+    arrowGroup.children[2].points( @[(shapeX+6).cint,
+                                     shapeY.cint,
+                                     myPoints[2].to(cint),
+                                     myPoints[3].to(cint)]  )    
+  # Somehow we know the arrows that require update due to the shape being moved.
+
+  #console.log("target: ", node.x())
+  #echo node.x()
+  #echo typeof(evt.target)
+  #console.log("currentTarget: ", evt.currentTarget.x ) #children[0].parent.attrs.x())
+  #console.log("currentTarget: ", evt.currentTarget.children[0].x)
+  #var shape = evt.target;
+  #var group = evt.currentTarget;
 
 proc main =
   var stage = newStage("container", 1000, 800)
@@ -136,7 +196,8 @@ proc main =
   let step1 = newStep( Step(n:1, title:"Request support", by: @["Customer", "Technical Support"]) )
   let step2 = newStep( Step(n:2, title:"Resolve sales support request", by: @["Sales"], x:300) )
   let arrow = connect(step1, step2)
-
+  step2.on("dragmove", update)
+  step1.on("dragmove", update)
   layer.add(step1)
   layer.add(step2)
   layer.add(arrow)

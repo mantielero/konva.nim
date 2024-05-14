@@ -6,8 +6,8 @@ type
   TextObj* {.importc:"Konva.Text".} = ref object of ShapeObj
     offsetX*:proc(offset:cint) {.closure.}
     offsetY*:proc(offset:cint) {.closure.}    
-    width*:proc():cint {.closure.}
-    height*:proc():cint {.closure.}
+    # width*:proc():cint {.closure.}
+    # height*:proc():cint {.closure.}
 
   Text* = ref object of JsObject
     x*:cdouble

@@ -7,6 +7,8 @@ import shape
 type
   LineObj* {.importc:"Konva.Line".} = ref object of ShapeObj
     #add*:proc(tag:TagObj|TextObj) {.closure.}
+    setPoints*{.importc:"points".}:proc(p:seq[cint]) {.closure.}
+    points*{.importc:"points".}:proc() {.closure.}
   Line* = ref object of JsObject
     points*:seq[int]
     stroke*:cstring

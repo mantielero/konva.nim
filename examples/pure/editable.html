@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/konva@8/konva.min.js"></script>
+  <meta charset="utf-8" />
+  <title>Editable Text in Rectangle</title>
+</head>
+<body>
+  <div id="container"></div>
+  <script>
+    // Configura el escenario y la capa
+    var stage = new Konva.Stage({
+      container: 'container',
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+
+    var layer = new Konva.Layer();
+    stage.add(layer);
+
+    // Crea el rectángulo
+    var rect = new Konva.Rect({
+      x: 50,
+      y: 50,
+      width: 200,
+      height: 100,
+      fill: '#00D2FF',
+      stroke: 'black',
+      strokeWidth: 2,
+    });
+
+    // Crea el texto
+    var text = new Konva.Text({
+      x: 60,
+      y: 80,
+      text: 'Haz doble clic para editar',
+      fontSize: 18,
+      fill: 'black',
+      draggable: true, // Permite arrastrar el texto
+    });
+
+    // Agrega el rectángulo y el texto a la capa
+    layer.add(rect);
+    layer.add(text);
+    layer.draw();
+
+    // Habilita la edición del texto
+    text.on('dblclick', () => {
+      // Oculta el texto
+      text.hide();
+
+      // Crea un input de texto para editar
+      var textPosition = text.absolutePosition();
+      var stageBox = stage.container().getBoundingClientRect();
+
+      var areaPosition = {
+        x: stageBox.left + textPosition.x,
+        y: stageBox.top + textPosition.y,
+      };
+
+      var textarea = document.createElement('textarea');
+      document.body.appendChild(textarea);
+
+      textarea.value = text.text();
+      textarea.style.position = 'absolute';
+      textarea.style.top = areaPosition.y + 'px';
+      textarea.style.left = areaPosition.x + 'px';
+      textarea.style.width = rect.width() - 20 + 'px';
+      textarea.style.height = rect.height() - 20 + 'px';
+      textarea.style.fontSize = '18px';
+      textarea.focus();
+
+      textarea.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+          text.text(textarea.value);
+          layer.draw();
+          document.body.removeChild(textarea);
+          text.show();
+        }
+      });
+
+      textarea.addEventListener('blur', function () {
+        text.text(textarea.value);
+        layer.draw();
+        document.body.removeChild(textarea);
+        text.show();
+      });
+    });
+  </script>
+</body>
+</html>

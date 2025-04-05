@@ -1,0 +1,2 @@
+import ../konva
+export konva

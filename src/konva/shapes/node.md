@@ -1,0 +1,141 @@
+# Node
+https://konvajs.org/api/Konva.Node.html
+
+## Parameters
+Name   Type   Description
+- config	Object	
+- x (optional)	Number	
+- y (optional)	Number	
+- width (optional)	Number	
+- height (optional)	Number	
+- visible (optional)	Boolean	
+- listening (optional)	Boolean	whether or not the node is listening for events
+- id (optional)	String	unique id
+- name (optional)	String	non-unique name
+- opacity (optional)	Number	determines node opacity. Can be any number between 0 and 1
+- scale (optional)	Object	set scale
+- scaleX (optional)	Number	set scale x
+- scaleY (optional)	Number	set scale y
+- rotation (optional)	Number	rotation in degrees
+- offset (optional)	Object	offset from center point and rotation point
+- offsetX (optional)	Number	set offset x
+- offsetY (optional)	Number	set offset y
+- draggable (optional)	Boolean	makes the node draggable. When stages are draggable, you can drag and drop the entire stage by dragging any portion of the stage
+- dragDistance (optional)	Number	
+- dragBoundFunc (optional)	function	
+
+## Own Methods
+- [X] clearCache()
+- [ ] cache(config)
+- [X] isCached()
+- [ ] getClientRect(config)
+- [X] on(evtStr, handler)
+- [ ] off(evtStr)
+- [ ] remove()
+- [X] destroy()
+- [ ] getAttr(attr)
+- [X] getAncestors()
+- [X] getAttrs()
+- [ ] setAttrs(config)
+- [X] isListening()
+- [X] isVisible()
+- [ ] show()
+- [X] hide()
+- [X] getAbsoluteZIndex()
+- [X] getDepth()
+- [X] getRelativePointerPosition()
+- [ ] getAbsolutePosition(Ancestor)
+- [ ] move(change)
+- [ ] rotate(theta)
+- [X] moveToTop()
+- [X] moveUp()
+- [X] moveDown()
+- [X] moveToBottom()
+- [X] getAbsoluteOpacity()
+- [ ] moveTo(newContainer)
+- [ ] toObject()
+- [ ] toJSON()
+- [X] getParent()
+- [ ] findAncestors(selector, includeSelf, stopNode)
+- [ ] findAncestor(selector, includeSelf, stopNode)
+- [X] getLayer()
+- [X] getStage()
+- [ ] fire(eventType, evt, bubble)
+- [X] getAbsoluteTransform()
+- [X] getAbsoluteScale()
+- [X] getAbsoluteRotation()
+- [X] getTransform()
+- [ ] clone(obj)
+- [ ] toCanvas(config)
+- [ ] toDataURL(config)
+- [ ] toImage(config)
+- [ ] toBlob(config)
+- [X] getClassName()
+- [X] getType()
+- [X] addName(name)
+- [ ] hasName(name)
+- [ ] removeName(name)
+- [ ] setAttr(attr, val)
+- [X] draw()
+- [X] startDrag()
+- [X] stopDrag()
+- [X] isDragging()
+- [ ] isClientRectOnScreen(margin)
+- [ ] Node.create(json, container)
+- [X] zIndex(index)
+- [ ] absolutePosition(pos)
+- [ ] position(pos)
+- [X] x(x)
+- [X] y(y)
+- [ ] globalCompositeOperation(type)
+- [ ] opacity(opacity)
+- [X] name(name)
+- [ ] id(id)
+- [ ] rotation(rotation)
+- [ ] scale(scale)
+- [ ] scaleX(x)
+- [ ] scaleY(y)
+- [ ] skew(skew)
+- [ ] skewX(x)
+- [ ] skewY(y)
+- [X] offsetX(x)
+- [X] offsetY(y)
+- [X] dragDistance(distance)
+- [X] width(width)
+- [X] height(height)
+- [ ] listening(listening)
+- [ ] preventDefault(preventDefault)
+- [X] filters(filters)
+- [ ] visible(visible)
+- [ ] transformsEnabled(enabled)
+- [ ] size(size)
+- [ ] dragBoundFunc(dragBoundFunc)
+- [X] draggable(draggable)
+- [ ] to(params)
+- [X] blurRadius(radius)
+- [X] brightness(brightness)
+- [X] contrast(contrast)
+- [ ] embossStrength(level)
+- [ ] embossWhiteLevel(embossWhiteLevel)
+- [ ] embossDirection(embossDirection)
+- [ ] embossBlend(embossBlend)
+- [ ] enhance(amount)
+- [ ] hue(hue)
+- [ ] saturation(saturation)
+- [ ] luminance(value)
+- [ ] hue(hue)
+- [ ] saturation(saturation)
+- [ ] value(value)
+- [ ] kaleidoscopePower(power)
+- [ ] kaleidoscopeAngle(degrees)
+- [ ] noise(noise)
+- [ ] pixelSize(pixelSize)
+- [ ] levels(level)
+- [ ] red(red)
+- [ ] green(green)
+- [X] blue(blue)
+- [ ] red(red)
+- [ ] green(green)
+- [ ] blue(blue)
+- [X] alpha(alpha)
+- [ ] threshold(threshold)

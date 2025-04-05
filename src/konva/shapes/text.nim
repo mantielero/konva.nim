@@ -18,17 +18,21 @@ type
     # width*:proc():cint {.closure.}
     # height*:proc():cint {.closure.}
 
-  # Text* = ref object of JsObject
-  #   x*:cdouble
-  #   y*:cdouble
-  #   text*:cstring
-  #   fontFamily*:cstring
-  #   fontSize*:cint
-  #   padding*:cint
-  #   fill*:cstring
-  #   align*:cstring
+  Text* = ref object of JsObject
+    x*:cdouble
+    y*:cdouble
+    text*:cstring
+    fontFamily*:cstring
+    fontSize*:cint
+    padding*:cint
+    fill*:cstring
+    align*:cstring
+    stroke*:cstring
+    width*:cint
 
 proc newText*():TextObj {.importcpp:"new Konva.Text()".}
+
+proc newText*(txt:Text):TextObj {.importcpp:"new Konva.Text(@)".}
 
 template genAccessor(name: untyped, paramType: untyped) =
   proc `name`*(self: TextObj): JsObject {.importcpp: "#." & astToStr(name) & "()".}

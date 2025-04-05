@@ -14,7 +14,7 @@ type
     shadowColor*:cstring
     shadowBlur*:cint
     shadowOffsetX*:cint
-    shadownOffsetY*:cint
+    shadowOffsetY*:cint
     shadowOpacity*:cdouble
 
 

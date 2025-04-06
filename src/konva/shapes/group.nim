@@ -1,10 +1,10 @@
 # https://konvajs.org/api/Konva.Group.html
 import jsffi
-import shape
+import container, shape
 # import tag, text
 
 type
-  GroupObj* {.importc:"Konva.Group".} = ref object of ShapeObj
+  GroupObj* {.importc:"Konva.Group".} = ref object of ContainerObj
     #height* {.importc.}:cdouble
 
     add*:proc(tag:ShapeObj) {.closure.}

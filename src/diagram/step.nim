@@ -11,15 +11,15 @@ type
     # y*:int = 0
     #width*:int = 200
     # height*:int = 0
-    # draggable*:bool = false
+    #draggable*:bool = false
 
 
 proc newStep*(val:Step):StepObj = 
   var newVal = val
   if not (val.width > 0):
-    newVal["width"] = 200
+    newVal.width = 200
   if not val.draggable:
-    newVal["draggable"] = true
+    newVal.draggable = true
   let headerHeight = 50
   let titleHeight  = 100
    
@@ -61,7 +61,7 @@ proc newStep*(val:Step):StepObj =
   var n = 0
   var h = headerHeight + titleHeight 
   for actionee in val.by:
-    let line = newLine( Line{points: @[0,h,group.width().int,h],stroke:"black", strokeWidth:1} )
+    let line = newLine( Line(points: @[0,h,group.width().int,h],stroke:"black", strokeWidth:1) )
 
     let actioneeTxt = newText( )
     actioneeTxt.width(group.width()) 
@@ -83,10 +83,10 @@ proc newStep*(val:Step):StepObj =
   # Rectangle
   if val.height != 0:  # Force step height
     h = val.height.int
-  let rect = newRect(Rect{ width:group.width(), height: h.cdouble, 
+  let rect = newRect(Rect( width:group.width(), height: h.cdouble, 
                       fill:"lightgray", stroke:"black", strokeWidth:4,
-                      shadowBlur: 10, cornerRadius:10} )
-  group.setHeight(h)
+                      shadowBlur: 10, cornerRadius:10) )
+  group.height(h.cdouble)
   group.add(rect) 
   rect.zIndex(0)
 

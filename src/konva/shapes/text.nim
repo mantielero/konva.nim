@@ -54,9 +54,13 @@ genAccessor(align, cstring) # 'left', 'center', 'right' or 'justify'
 
 genAccessor(direction, cstring)  # "rtl"
 
+genAccessor(fill, cstring)
 
+genAccessor(fontSize, cint) 
 
+genAccessor(fontFamily, cstring)
 
+genAccessor(padding, cint)
 
 # https://konvajs.org/api/Konva.Text.html#name__anchor
 
@@ -78,8 +82,8 @@ genAccessor(wrap, cstring)  # "word", "char", "none"
 #[
 - [ ] _shouldHandleEllipsis(currentHeightPx)
 - [ ] ellipsis(ellipsis)
-- [ ] fontFamily(fontFamily)
-- [ ] fontSize(fontSize)
+- [X] fontFamily(fontFamily)
+- [X] fontSize(fontSize)
 - [ ] fontStyle(fontStyle)
 - [ ] fontVariant(fontVariant)
 - [ ] getTextWidth()

@@ -1,9 +1,10 @@
 import jsffi
-import ../shapes/shape
+import ../shapes/[group,shape]
+
 
 type
   LayerObj* {.importc:"Konva.Layer".} = ref object of JsObject
-    add*: proc(shape:ShapeObj) {.closure.}
+    add*: proc(shape:ShapeObj|GroupObj) {.closure.}
     draw*: proc() {.closure.}
     
 

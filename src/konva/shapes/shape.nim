@@ -1,6 +1,6 @@
 # https://konvajs.org/api/Konva.Shape.html
 import jsffi
-import std/dom
+#import std/dom
 import types 
 #import ../common/templates
 

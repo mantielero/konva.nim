@@ -1,4 +1,4 @@
-import jsffi
+#import jsffi
 
 converter toCstring*(val:string): cstring =
   val.cstring

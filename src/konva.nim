@@ -1,4 +1,4 @@
-import jsffi
+#import jsffi
 #export jsffi
 #import std/jsconsole
 

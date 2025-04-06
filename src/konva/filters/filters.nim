@@ -1,8 +1,8 @@
 # https://forum.nim-lang.org/t/12762
 
-import jsffi
-import ../common/konva
-import ../shapes/types
+#import jsffi
+#import ../common/konva
+#import ../shapes/types
 
 #var node {.importc,nodecl.}: JsObject
 #var Konva {.importc,nodecl.}: JsObject

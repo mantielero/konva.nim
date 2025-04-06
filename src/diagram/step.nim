@@ -5,8 +5,8 @@ import std/strformat
 type
   Step* = ref object of Group
     n*:int
-    title*:string
-    by*:seq[string]
+    title*:cstring
+    by*:seq[cstring]
     # x*:int = 0
     # y*:int = 0
     #width*:int = 200

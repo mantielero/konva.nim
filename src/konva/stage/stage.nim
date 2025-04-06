@@ -1,12 +1,26 @@
 # https://konvajs.org/api/Konva.Stage.html
 import jsffi
+import ../shapes/container
 import ../layer/layer
 
 type
-  StageObj* {.importc:"Konva.Stage".} = ref object of JsObject
-    width*: proc():cint {.closure.}
-    height*: proc():cint {.closure.}
+  StageObj* {.importc:"Konva.Stage".} = ref object of ContainerObj
+    setContainer*: proc(container:cstring) {.closure.}
     add*: proc(layer:LayerObj) {.closure.}   
+
+
+# template genAccessor(name: untyped, paramType: untyped) =
+#   #proc `name`*(self: ShapeObj): JsObject {.importcpp: "#." & astToStr(name) & "()".}
+#   proc `name`*(self: StageObj): paramType {.importcpp: "#." & astToStr(name) & "()".}
+#   proc `name`*(self: StageObj; value: paramType) {.importcpp: "#." & astToStr(name) & "(#)".}
+
+
+# template genGetter(name:untyped) =
+#   proc `name`*(self: StageObj): JsObject {.importcpp: "#." & astToStr(name) & "()".}
+
+
+#template genSetter(name: untyped, paramType: untyped) =
+#  proc `name`*(self: StageObj; value: paramType) {.importcpp: "#." & astToStr(name) & "(#)".}
 
 
 proc newStage*(config:JsObject = nil): StageObj {. importcpp: "new Konva.Stage(@)" .}
@@ -32,3 +46,8 @@ proc newStage*(container:string; width,height:int;
     config["scaleY"]    = scaleY.cint
 
   return newStage(config)
+
+  # genAccessor(setContainer, cstring)
+
+  # genAccessor(height,cint)
+  # genAccessor(width,cint)

@@ -1,8 +1,11 @@
 import konva
-import std/dom, jsconsole
+import std/[jsffi,dom, jsconsole]
 
 proc main =
-  var stage = newStage("container", 1000, 800)
+  #var stage = newStage("container", 1000, 800)
+  var stage = newStage(js{container: "container".cstring, 
+                          width: "1000".cstring, 
+                          height: "800".cstring} )  
   let layer = newLayer()
 
   # Text

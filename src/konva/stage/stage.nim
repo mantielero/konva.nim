@@ -23,9 +23,10 @@ type
 #  proc `name`*(self: StageObj; value: paramType) {.importcpp: "#." & astToStr(name) & "(#)".}
 
 
-proc newStage*(config:JsObject = nil): StageObj {. importcpp: "new Konva.Stage(@)" .}
+proc newStage*(config:JsObject = nil): StageObj {. importcpp: "new Konva.Stage(#)" .}
 
-proc newStage*(container:string; width,height:int; 
+proc newStage*(container:string; 
+               width,height:int; 
                x:int = 0; y:int = 0; 
                scale:int = 1; scaleX:int = 1; scaleY:int = 1): StageObj =
   var config = newJsObject()

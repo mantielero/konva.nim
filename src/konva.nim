@@ -18,8 +18,8 @@ export layer
 import konva/common/[konva, converters]
 export konva, converters
 
-import konva/filters/filters
-export filters
+#import konva/filters/filters
+#export filters
 
 
 #import diagram/[diagram,box,link,step]

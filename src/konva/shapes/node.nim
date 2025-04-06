@@ -38,19 +38,12 @@ template genGetter(name:untyped) =
 #proc filters*(obj: NodeObj; filters: openArray[proc(self: NodeObj; imageData: ImageData)]) {.importcpp:"#.filters(@)".}
 
 type
-  Filter* {.importc,nodecl.}  = proc()
-  #Filter* {.importc:"Konva.Filters".} = proc(n: JsObject)
-#proc filters*(obj: NodeObj; filters: openArray[ proc() ] ) {.importcpp.}
-#proc filters*(obj: NodeObj; filters: seq[ proc() ] )       {.importcpp.}
-proc filters*(obj: NodeObj; filters: openArray[ Filter ]) {.importcpp:"#.filters(#)".}
-proc filters*(obj: NodeObj; filters: seq[ Filter ]) {.importcpp:"#.filters(#)".}
-#proc filters*(obj: NodeObj; filters: openArray[ proc(n:JsObject) ]) {.importcpp.}
-#proc filters*(obj: NodeObj; filters: openArray[ proc(n:JsObject) ]) {.importcpp.}
-proc blurFilter*() {.importcpp: "Konva.Filters.Blur".}
+  Filter* {.importc:"Konva.Filters".} = proc()
 
-#proc blur*() {.importcpp: "Konva.Filters.Blur".}  # WORKS
-#proc blurFilter*() {.importjs: "Konva.Filters.Blur@".}
-#proc blur*(self:NodeObj; imageData: ImageData)  {.importcpp: "Konva.Filters.Blur".}  # WORKS
+proc filters*(obj: NodeObj; filters: seq[ Filter ]) {.importcpp:"#.filters(#)".}
+#proc filters*(obj: NodeObj; filters: openArray[ Filter ]) {.importcpp.}
+
+proc blurFilter*() {.importcpp: "Konva.Filters.Blur".}
 #proc blbur*(self:NodeObj; imageData: ImageData)  {.importcpp: "Konva.Filters.Blur(@)".}  # NOT WORKING
 
 

@@ -9,7 +9,7 @@ type
     add*: proc(layer:LayerObj) {.closure.}   
 
 
-proc newStage*(config:JsObject): StageObj {. importcpp: "new Konva.Stage(@)" .}
+proc newStage*(config:JsObject = nil): StageObj {. importcpp: "new Konva.Stage(@)" .}
 
 proc newStage*(container:string; width,height:int; 
                x:int = 0; y:int = 0; 
